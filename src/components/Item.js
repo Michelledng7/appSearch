@@ -14,10 +14,10 @@ const Item = ({id,
     <article className='item'>
       
       <div>
-      <p><img src = {logo}></img><h4 style={{color:'steelblue'}}>{name}</h4></p>
+      <div><img src = {logo} alt={name}></img><h4 style={{color:'steelblue'}}>{name}</h4></div>
         <h5>{des}</h5>
         <p className='keywords'>{keyWords}</p>
-        <p> <img src = {star16}></img> {count}<br/>{lang}<br/></p>
+        <p> <img src = {star16} alt={name}></img> {count}<br/>{lang}<br/></p>
         <p>Updated: {updated}</p>
       </div>
     </article>

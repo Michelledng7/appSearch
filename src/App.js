@@ -1,11 +1,13 @@
 import React from "react";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom";
 //import components
 import Header from "./components/Header";
-import Navbar from "./components/Navbar";
+
 import SearchForm from "./components/SearchForm";
 import Home from "./components/Home";
 import About from "./components/About";
+import Navbar from "./components/Navbar";
+
 
 function App() {
   return (
@@ -13,14 +15,11 @@ function App() {
     <Router>
     <div>
     <Header/>
-    <Navbar/>
-      <Routes>
-      <Route path ='/about' element= {<About/>}/>
-      </Routes>    
-      <Routes>
-      <Route path ='/' element= {<Home/>}/>
-      </Routes> 
-        
+    <Navbar />
+    <Routes>
+    <Route path ='/about' element= {<About/>}/>
+    <Route path ='/' element= {<Home/>}/>
+    </Routes> 
     </div>
     </Router>
   );
